@@ -8,27 +8,33 @@ body{
     background-color: #f9fbf2;
 }
 
-.navbar{
-    border-radius: 20px;
+.navbar {
+    background-color: #C879FF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    padding: 15px 50px;
-    background-color: #c879ff;
+    padding: 10px 30px;
+    border-radius: 20px; 
 }
 
-.nav-links{
-    display: flex;
-    gap: 15px;
+.nav-links {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;         
+    gap: 20px;             
 }
-.nav-links a{
-    color: #f9fbf2;
-    text-decoration: none;
+
+.nav-links li {
+    display: inline;       
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #f9f9ff;          
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
 }
-
 .logo-image{
    height: 60px;
 
@@ -160,4 +166,638 @@ body{
     color: #666;
 
     line-height: 1.6;
+}
+
+.footer{
+
+    background-color: #231f20;
+
+    color: #f9fbf2;
+
+    text-align: center;
+
+    padding: 20px 0;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center vertically;
+    height: 80vh;
+}
+.login-card{
+
+    margin-top: 20px;
+
+    background: #C879FF;
+
+    width: 400px;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 4px 20px rgb(142, 84, 183);
+
+    text-align: center;
+}
+
+.login-card h1{
+
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 36px;
+
+    color: #f9fbf2;
+
+    margin-bottom: 15px;
+}
+
+.login-card h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 24px;
+
+    color: #f9fbf2;
+
+    margin-bottom: 15px;
+}
+.login-card input{
+
+    width: 75%;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 20px rgb(117, 70, 150);
+}
+
+.login-card button{
+
+    width: 83%;
+
+    padding: 15px;
+
+    background-color: #826aed;
+
+    color: #f9fbf2;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 20px rgb(117, 70, 150);
+}
+
+.login-card button:hover{
+
+    background: #7ae07a;
+
+    transform: translateY(-3px);
+
+}
+
+.login-card h3{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    color: #f9fbf2;
+
+    margin-top: 20px;
+}
+.login-card h4 a{
+
+    color: #f9fbf2;
+
+    text-decoration: underline;
+
+    font-weight: bold;
+
+    font-family: 'poppins', sans-serif;
+}
+.login-card h4{
+
+    color: #f9fbf2;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-page{
+    display: flex;
+    justify-content: center;
+    align-items: center vertically;
+    height: 120vh;
+    background-color: #C879FF;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.register-card{
+
+    margin-top: 25px;
+
+    background: #f9fbf2;
+
+    width: 400px;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 4px 20px rgb(142, 84, 183);
+
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-card h1{
+
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 36px;
+
+    color: #826aed;
+
+    margin-bottom: 15px;
+}
+
+.register-card h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 24px;
+
+    color: #826aed;
+
+    margin-bottom: 15px;
+}
+
+.register-card h3{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    color: #666;
+
+    margin-top: 20px;
+}
+
+.register-card h4 a{
+
+    color: #826aed;
+
+    text-decoration: underline;
+
+    font-weight: bold;
+
+    font-family: 'poppins', sans-serif;
+}
+
+.register-card h4{
+
+    color: #826aed;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-card input{
+
+    width: 75%;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 20px rgb(117, 70, 150);
+}
+
+.register-card button{
+
+    width: 83%;
+
+    padding: 15px;
+
+    background-color: #826aed;
+
+    color: #f9fbf2;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 20px rgb(117, 70, 150);
+}
+
+.register-card button:hover{
+
+    background: #7ae07a;
+
+    transform: translateY(-3px);
+
+}
+
+.dashboard{
+
+    padding: 50px 80px;
+}
+
+.progress-section{
+
+    margin-top: 10px;
+}
+
+.progress-bar{
+
+    width: 100%;
+
+    height: 25px;
+
+    background: #ddd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-top: 15px;
+}
+.progress-fill{
+
+    width: 70%;
+
+    height: 100%;
+
+    background: #C879FF;
+}
+
+.progress-section h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 28px;
+
+    color: #231f20;
+}
+
+.lessons-section h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 18px;
+
+    color: #231f20;
+
+    margin-top: 10px;
+}
+
+.lessons-section{
+
+    margin-top: 60px;
+}
+
+.lesson-cards{
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+.lesson-card{
+
+    background: white;
+
+    padding: 30px;
+
+    width: 250px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 20px rgb(147, 126, 162);
+
+    transition: 0.3s;
+}
+
+.lesson-card:hover{
+
+    transform: translateY(-8px);
+}
+
+.lesson-card h3{
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+    color: #826AED;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.lesson-card p{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 16px;
+
+    color: #666;
+}
+
+.stats-section{
+
+    margin-top: 60px;
+}
+
+.stats-section h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 28px;
+
+    color: #231f20;
+}
+
+.stats-cards{
+    
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+.stats-card{
+
+    background: #826AED;
+
+    color: white;
+
+    padding: 30px;
+
+    width: 250px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 20px rgb(147, 126, 162);
+}
+
+.stats-card h3{
+
+    font-family: 'poppins', sans-serif;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.stats-card p{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 16px;
+}
+
+.event {
+  padding: 10px;
+  border-left: 4px solid #4f46e5;
+  margin-top: 10px;
+  background: #f9f9ff;
+  border-radius: 8px;
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
+}
+
+.card h2{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 28px;
+
+    color: #231f20;
+}
+
+.event {
+  padding: 12px;
+  border-left: 4px solid #4f46e5;
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.homework-cards{
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+.homework-card{
+
+    background: white;
+
+    padding: 20px;
+
+    width: 300px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 20px rgb(147, 126, 162);
+
+    transition: 0.3s;
+}
+
+.homework-card h3{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+    color: #231f20;
+}
+
+.homework-card p{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    color: #826AED;
+
+    font-weight: bold;
+}
+
+.homework-card .status-row{
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    color: #231f20;
+}
+
+.homework-card .status-row span{
+
+    font-weight: bold;
+}
+
+.homework-card button{
+
+    padding: 5px 8px;
+
+    background-color: #7ae07a;
+
+    color: #f9fbf2;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+}
+
+.lessons-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;   /* 🔥 permite scroll orizontal */
+  padding-bottom: 10px;
+}
+
+.lesson-card {
+  min-width: 260px;   
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.lesson-info h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.lesson-info p {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.lesson-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag.pdf {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+}
+.lesson-actions button {
+  padding: 6px 10px;
+  background-color: #826aed;
+  color: #f9fbf2;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.quiz-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.quiz-card {
+  min-width: 240px;
+  flex-shrink: 0;
+
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  font-family: "Inter", sans-serif;
+}
+
+.quiz-card h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.quiz-card p {
+  font-size: 12px;
+  color: #666;
+}
+
+.quiz-card button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #826aed;
+  color: #f9f9ff;
+  cursor: pointer;
 }

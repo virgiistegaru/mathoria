@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Quiz | Mathoria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,13 +14,55 @@
     </div>
 
     <ul class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="lessons.html">Lessons</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="dashboard.html">Dashboard</a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="login.html">Login/Register</a></li>
     </ul>
 
 </nav>
+
+<section class="card">
+  <h2>Quizzes 🧠</h2>
+
+  <div class="quiz-container">
+
+    <div class="quiz-card">
+      <h3>Algebra Basics</h3>
+      <p>10 questions • Easy</p>
+      <button onclick="startQuiz('algebra')">Start</button>
+    </div>
+
+    <div class="quiz-card">
+      <h3>Normal Distribution</h3>
+      <p>15 questions • Medium</p>
+      <button onclick="startQuiz('statistics')">Start</button>
+    </div>
+
+    <div class="quiz-card">
+      <h3>Geometry - Circles</h3>
+      <p>12 questions • Hard</p>
+      <button onclick="startQuiz('geometry')">Start</button>
+    </div>
+
+    <div id="quiz-box" style="display:none; margin-top:20px;" class="card">
+  <h2 id="question">Question</h2>
+
+  <div id="answers"></div>
+
+  <p id="progress"></p>
+</div>
+
+  </div>
+</section>
+
+<script>
+    function startQuiz(type) {
+        localStorage.setItem("selectedQuiz", type);
+        window.open("play.html", "_blank");
+    }
+    </script>
 
 </body>
 </html>

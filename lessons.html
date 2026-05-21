@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Lessons | Mathoria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,13 +14,64 @@
     </div>
 
     <ul class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="lessons.html">Lessons</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="dashboard.html">Dashboard</a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="login.html">Login/Register</a></li>
     </ul>
 
 </nav>
+
+<section class="card">
+  <h2>Lessons 📖</h2>
+
+  <div class="lessons-container">
+
+    <div class="lesson-card">
+      <div class="lesson-info">
+        <h3>Algebra - Quadratic Equations</h3>
+        <p>PDF Lecture • 12 pages</p>
+      </div>
+
+      <div class="lesson-actions">
+        <span class="tag pdf">PDF</span>
+        <button onclick="openPDF('pdf/algebra.pdf')">Open</button>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-info">
+        <h3>Statistics - Normal Distribution</h3>
+        <p>PDF Lecture • 18 pages</p>
+      </div>
+
+      <div class="lesson-actions">
+        <span class="tag pdf">PDF</span>
+       <button onclick="openPDF('pdf/statistics.pdf')">Open</button>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-info">
+        <h3>Geometry - Circles</h3>
+        <p>PDF Lecture • 10 pages</p>
+      </div>
+
+      <div class="lesson-actions">
+        <span class="tag pdf">PDF</span>
+        <button onclick="openPDF('pdf/geometry.pdf')">Open</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function openPDF(path) {
+  window.open(path, "_blank");
+}
+</script>
 
 </body>
 </html>
