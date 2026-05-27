@@ -26,9 +26,7 @@
 
 <section class="dashboard">
 
-    <h1>
-        Welcome back, Andrei 👋
-    </h1>
+    <h1 id="welcomeText">Welcome</h1>
 
 </section>
 
@@ -50,19 +48,22 @@
 
     <div class="lesson-cards">
 
-        <div class="lesson-card">
+        <div class="lesson-card" data-title="Derivatives">
             <h3>Derivatives</h3>
             <p>Continue learning</p>
+            <button onclick="openPDF('calculus.pdf', 'Derivatives')">Open</button>
         </div>
 
-        <div class="lesson-card">
+        <div class="lesson-card" data-title="Integrals">
             <h3>Integrals</h3>
             <p>Continue learning</p>
+            <button onclick="openPDF('calculus.pdf', 'Integrals')">Open</button>
         </div>
 
-        <div class="lesson-card">
+        <div class="lesson-card" data-title="Functions">
             <h3>Functions</h3>
             <p>Continue learning</p>
+            <button onclick="openPDF('algebra.pdf', 'Functions')">Open</button>
         </div>
 
     </div>
@@ -94,7 +95,7 @@
 
 </section>
 
-<section class="card">
+<section class="schedule-card">
   <h2>Upcoming Schedule 📅</h2>
 
   <div class="event">
@@ -113,7 +114,7 @@
   </div>
 </section>
 
-<section class="card">
+<section class="homework-section">
   <h2>Assigned Homework 📌</h2>
 <div class="homework-cards">
   <div class="homework-card">
@@ -141,6 +142,7 @@
 <script src="logout.js"></script>
 <script src="auth.js"></script>
 <script src="guard.js"></script>
+<script src="dashboard.js"></script>
 
 </body>
 </html>

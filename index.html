@@ -96,8 +96,76 @@
 
 </section>
 
+<section class="faq-section">
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            What is Mathoria?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Mathoria is an interactive learning platform designed to help students learn mathematics through lessons and quizzes.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Do I need an account?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes, you need an account to access lessons, quizzes and progress tracking.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Is Mathoria free?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes! Mathoria is completely free for students.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
 <script src="logout.js"></script>
 <script src="auth.js"></script>
+
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const answer = question.nextElementSibling;
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+
+    });
+
+});
+</script>
 
 </body>
 
